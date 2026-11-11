@@ -1,0 +1,23 @@
+{
+  "_comment": "SG Palette — grille tarifaire. Laisser les prix à null => le site affiche 'Prix sur devis'. Renseigner unit_price_tnd (prix unitaire indicatif hors TVA, en dinars) pour activer l'estimation automatique. TODO: confirmer tous les prix.",
+  "currency": "TND",
+  "vat_included": false,
+  "types": {
+    "standard": { "label_fr": "Palette standard", "label_ar": "باليت قياسي", "unit_price_tnd": null },
+    "euro":     { "label_fr": "EUR / EPAL",        "label_ar": "EUR / EPAL",  "unit_price_tnd": null },
+    "crate":    { "label_fr": "Caisse en bois",    "label_ar": "صندوق خشبي",  "unit_price_tnd": null },
+    "heavy":    { "label_fr": "Palette renforcée",  "label_ar": "باليت مقوّى", "unit_price_tnd": null }
+  },
+  "size_factor": {
+    "_comment": "multiplicateur selon le format. 1.0 = référence 120x80.",
+    "80x60": 1.0, "100x80": 1.0, "120x80": 1.0, "120x100": 1.0
+  },
+  "condition_factor": {
+    "_comment": "multiplicateur selon l'état (neuve vs réemployée).",
+    "new": 1.0, "used": 1.0
+  },
+  "export_treatment_tnd": null,
+  "qty_discounts": [
+    { "min_qty": 1,    "factor": 1.0 }
+  ]
+}

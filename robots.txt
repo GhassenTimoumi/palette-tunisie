@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# AI / GEO crawlers explicitly welcomed (Generative Engine Optimization)
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://palette-tunisie.com/sitemap.xml
