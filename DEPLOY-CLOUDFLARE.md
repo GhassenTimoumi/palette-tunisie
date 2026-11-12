@@ -1,4 +1,4 @@
-# Publier palette-tunisie sur Cloudflare Pages (palette-tunisie.com)
+# Publier palette-tunisie sur Cloudflare Pages (palette-tunisie.site)
 
 Site 100% statique → aucun build. Deux méthodes ; la **A** est la plus rapide, la **B** redéploie à chaque `git push`.
 
@@ -7,7 +7,7 @@ Site 100% statique → aucun build. Deux méthodes ; la **A** est la plus rapide
 - (option) `ANALYTICS.enabled:true` + `ga4Id` + `metaPixelId`.
 - Remplacer le logo placeholder `assets/brand/logo.svg`, le favicon `assets/favicon.svg` et l'image `assets/brand/og-image.png` par les visuels officiels.
 - Compléter les pages légales (`legal/`) et valider les `<!-- CONFIRM -->`.
-- Le domaine `palette-tunisie.com` est déjà réglé dans `js/config.js`; si tu changes de domaine, relance `node scripts/build-seo.mjs`.
+- Le domaine `palette-tunisie.site` est déjà réglé dans `js/config.js`; si tu changes de domaine, relance `node scripts/build-seo.mjs`.
 
 ---
 
@@ -32,18 +32,18 @@ Site 100% statique → aucun build. Deux méthodes ; la **A** est la plus rapide
 
 ---
 
-## Brancher le domaine palette-tunisie.com (après achat)
+## Brancher le domaine palette-tunisie.site (après achat)
 Le plus simple = gérer le DNS **chez Cloudflare** :
-1. Achète `palette-tunisie.com` (n'importe quel registrar, ou **Cloudflare Registrar**).
-2. Cloudflare : **Add a site** → `palette-tunisie.com` → plan Free → Cloudflare te donne **2 nameservers**.
+1. Achète `palette-tunisie.site` (n'importe quel registrar, ou **Cloudflare Registrar**).
+2. Cloudflare : **Add a site** → `palette-tunisie.site` → plan Free → Cloudflare te donne **2 nameservers**.
 3. Chez le registrar, remplace les nameservers par ceux de Cloudflare (propagation : quelques minutes à 24 h).
-4. Dans le projet Pages : **Custom domains → Set up a domain** → ajoute `palette-tunisie.com` **et** `www.palette-tunisie.com`. Cloudflare crée les enregistrements et le **certificat HTTPS** automatiquement.
+4. Dans le projet Pages : **Custom domains → Set up a domain** → ajoute `palette-tunisie.site` **et** `www.palette-tunisie.site`. Cloudflare crée les enregistrements et le **certificat HTTPS** automatiquement.
 5. (option) Redirige `www` → apex (ou l'inverse) via **Redirect Rules**.
 
-Si tu gardes le DNS ailleurs : ajoute un **CNAME** `www` → `palette-tunisie.pages.dev`, et pour l'apex `palette-tunisie.com` utilise l'**ALIAS/ANAME** du registrar (ou les enregistrements fournis par Cloudflare).
+Si tu gardes le DNS ailleurs : ajoute un **CNAME** `www` → `palette-tunisie.pages.dev`, et pour l'apex `palette-tunisie.site` utilise l'**ALIAS/ANAME** du registrar (ou les enregistrements fournis par Cloudflare).
 
 ## Après mise en ligne
 - Teste : formulaires (succès/erreur + fallback WhatsApp), bouton WhatsApp, bascule FR/ع (RTL), mobile 390 px.
-- **Google Search Console** : ajoute `palette-tunisie.com`, soumets `https://palette-tunisie.com/sitemap.xml`.
+- **Google Search Console** : ajoute `palette-tunisie.site`, soumets `https://palette-tunisie.site/sitemap.xml`.
 - **Google Business Profile** : crée/valide la fiche (Mornag), catégorie, photos.
 - GEO : `llms.txt` et le `robots.txt` (crawlers IA autorisés) sont déjà en place.

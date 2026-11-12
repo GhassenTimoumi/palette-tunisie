@@ -19,18 +19,20 @@ const BASE = (useCustom && domain ? domain.replace(/\/+$/, '') + '/' : ghPages);
 // Known previous base URLs we might need to replace with the new BASE.
 const OLD = [ghPages, (domain.replace(/\/+$/, '') + '/')].filter(Boolean);
 
-// All indexable pages (relative to repo root).
-const PAGES = [
-  '',
-  'produits/palette-bois-tunisie.html',
-  'produits/palette-eur-epal.html',
-  'produits/palette-export-ispm15.html',
-  'produits/caisse-bois.html',
-  'produits/palette-sur-mesure.html',
-  'produits/palette-reemployee.html',
-  'legal/confidentialite.html',
-  'legal/mentions-legales.html'
-];
+// All indexable pages — auto-discovered (root + produits/ + guides/ + zones/ + legal/).
+function discover(dir, prefix = '') {
+  let out = [];
+  for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (e.isDirectory()) {
+      if (/^(\.git|node_modules|scripts|assets|js|css|data)$/.test(e.name)) continue;
+      out = out.concat(discover(path.join(dir, e.name), prefix + e.name + '/'));
+    } else if (e.name.endsWith('.html') && e.name !== '404.html') {
+      out.push(prefix + e.name);
+    }
+  }
+  return out;
+}
+const PAGES = ['', ...discover('.').filter(p => p !== 'index.html').sort()];
 
 // 1) Rewrite absolute URLs inside every HTML file.
 function walk(dir) {

@@ -1,4 +1,4 @@
-# Palette Tunisie — palette-tunisie.com
+# Palette Tunisie — palette-tunisie.site
 
 Site vitrine bilingue (FR/AR) — thème **Modern** — opéré par la Société Galgaoui (SG Palette), Mornag, Ben Arous.
 Angle : palettes en bois (EUR/EPAL, export ISPM 15, sur-mesure, réemployées).
