@@ -33,9 +33,6 @@
   /* ---------- Pallet illustrations ---------- */
   var P = window.SGPallet;
   if (P) {
-    P.render(document.getElementById('heroPallet'), { scale: 22, topBoards: 5, accentIndex: 2, animate: !reduceMotion, label: 'Palette en bois SG Palette' });
-    P.render(document.getElementById('aboutPallet'), { scale: 17, topBoards: 5, accentIndex: 2 });
-    P.render(document.getElementById('preloaderPallet'), { scale: 15, topBoards: 5, accentIndex: 2, animate: !reduceMotion });
   }
 
   /* ---------- Gallery fallback (static markup already present) ---------- */

@@ -180,7 +180,6 @@
 
   <!-- ===== Pallet entrance overlay ===== -->
   <div class="preloader" id="preloader" aria-hidden="true">
-    <div class="preloader__pallet" id="preloaderPallet"></div>
     <div class="preloader__word">PALETTE&nbsp;TUNISIE</div>
   </div>
   <!-- Independent failsafe: removes the overlay even if a later script errors out -->
@@ -238,7 +237,7 @@
       </div>
       <div class="hero__visual reveal">
         <div class="hero__glow" aria-hidden="true"></div>
-        <div class="hero__pallet" id="heroPallet"></div>
+        <figure class="hero__photo"><img src="assets/gallery/palette-bois-neuve-tunisie.webp" alt="Palettes en bois neuves empilées — production Palette Tunisie" width="675" height="900" loading="eager" fetchpriority="high" /></figure>
         <div class="hero__chip hero__chip--1">EUR / EPAL</div>
         <div class="hero__chip hero__chip--2">120×80 · 120×100</div>
         <div class="hero__chip hero__chip--3" data-i18n="hero.badge3plain">Sur-mesure</div>
@@ -525,7 +524,7 @@
       <div class="about__visual reveal">
         <div class="about__badge"><span class="about__badge-num">25<span>+</span></span><span class="about__badge-txt" data-i18n="about.badge">ans dans la palette bois</span></div>
         <!-- CONFIRM: "25+ années" -->
-        <div class="about__img" id="aboutPallet"></div>
+        <figure class="about__img"><img src="assets/gallery/palettes-empilees-stock.webp" alt="Stock de palettes en bois prêtes à être livrées — Palette Tunisie" width="849" height="900" loading="lazy" /></figure>
       </div>
       <div class="about__copy reveal">
         <span class="eyebrow"><i class="dot"></i> <span data-i18n="about.eyebrow">Qui sommes-nous</span></span>
@@ -697,16 +696,6 @@
   <div class="mobilebar" aria-label="Actions rapides">
     <a href="#contact" class="btn btn--accent mobilebar__cta" data-i18n="mbar.quote" data-track="cta_mobilebar">Devis gratuit</a>
     <a href="https://wa.me/21651886122" class="btn btn--ghost mobilebar__wa" target="_blank" rel="noopener" data-i18n="mbar.wa" data-track="whatsapp_click">WhatsApp</a>
-  </div>
-
-  <!-- ===== Cookie / consent notice (hidden until needed by js/consent.js) ===== -->
-  <div class="consent" id="consent" role="dialog" aria-live="polite" aria-label="Cookies" hidden>
-    <p class="consent__text" data-i18n="consent.text">Nous utilisons des cookies de mesure d'audience pour améliorer le site. Vous pouvez accepter ou refuser.</p>
-    <div class="consent__actions">
-      <button class="btn btn--ghost btn--sm" id="consentDecline" data-i18n="consent.decline">Refuser</button>
-      <button class="btn btn--accent btn--sm" id="consentAccept" data-i18n="consent.accept">Accepter</button>
-      <a class="consent__link" href="legal/confidentialite.html" data-i18n="consent.more">En savoir plus</a>
-    </div>
   </div>
 
   <script src="js/pallets.js"></script>
