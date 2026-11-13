@@ -59,7 +59,9 @@ fs.writeFileSync('sitemap.xml',
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`);
 console.log('wrote sitemap.xml (' + PAGES.length + ' urls), base=' + BASE);
 
-// 3) robots.txt
+// 3) robots.txt — GEO-friendly: wildcard allow + explicit AI-search crawlers
+const AI_BOTS = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'PerplexityBot', 'Google-Extended', 'Applebot-Extended'];
+const aiBlock = AI_BOTS.map(b => `User-agent: ${b}\nAllow: /`).join('\n');
 fs.writeFileSync('robots.txt',
-  `User-agent: *\nAllow: /\n\nSitemap: ${BASE}sitemap.xml\n`);
-console.log('wrote robots.txt');
+  `User-agent: *\nAllow: /\n\n# AI / GEO crawlers explicitly welcomed\n${aiBlock}\n\nSitemap: ${BASE}sitemap.xml\n`);
+console.log('wrote robots.txt (GEO)');
