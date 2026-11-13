@@ -9,7 +9,10 @@
 
   var DICT = {
     fr: {
-      'nav.products': 'Produits',
+      'nav.products': 'Nos produits',
+      'nav.home': 'Accueil',
+      'nav.solutions': 'Solutions',
+      'nav.quality': 'Qualité',
       'nav.gallery': 'Galerie',
       'nav.calc': 'Devis en ligne',
       'nav.export': 'Export / ISPM 15',
@@ -55,11 +58,11 @@
       'mbar.quote': 'Devis gratuit',
       'mbar.wa': 'WhatsApp',
 
-      'hero.eyebrow': "Palettes en bois pour l'industrie et l'export",
-      'hero.title': 'Vos <span class="hl">palettes en bois</span>, produites en Tunisie',
-      'hero.lead': "Palette Tunisie conçoit, produit et livre des palettes en bois fiables pour vos flux logistiques : palettes neuves, EUR/EPAL, caisses, formats sur-mesure et palettes réemployées — de la manutention au stockage jusqu'à l'export.",
-      'hero.cta1': 'Obtenir un devis gratuit',
-      'hero.cta2': 'Voir notre catalogue →',
+      'hero.eyebrow': 'Palettes en bois — Tunisie',
+      'hero.title': 'Des <span class="hl">solutions bois</span> fiables pour votre activité',
+      'hero.lead': "Fabrication de palettes en bois et solutions d'emballage adaptées aux exigences de l'industrie, de la logistique et du transport.",
+      'hero.cta1': 'Demander un devis',
+      'hero.cta2': 'Découvrir nos produits',
       'hero.badge1': 'Livraison dans toute la Tunisie',
       'hero.badge2': 'Bois contrôlé & palettes traçables',
       'hero.badge3': 'Formats sur-mesure',
@@ -205,7 +208,10 @@
     },
 
     ar: {
-      'nav.products': 'المنتجات',
+      'nav.products': 'منتجاتنا',
+      'nav.home': 'الرئيسية',
+      'nav.solutions': 'الحلول',
+      'nav.quality': 'الجودة',
       'nav.gallery': 'المعرض',
       'nav.calc': 'طلب عرض سعر',
       'nav.export': 'التصدير / ISPM 15',
@@ -251,11 +257,11 @@
       'mbar.quote': 'عرض سعر مجاني',
       'mbar.wa': 'واتساب',
 
-      'hero.eyebrow': 'باليت خشبي للصناعة والتصدير',
-      'hero.title': '<span class="hl">باليت خشبي</span> من إنتاج تونس',
-      'hero.lead': 'تصمّم Palette Tunisie وتنتج وتوصّل باليت خشبيًا موثوقًا لتدفّقاتك اللوجستية: باليت جديد، EUR/EPAL، صناديق، مقاسات حسب الطلب وباليت مُعاد استعماله — من المناولة والتخزين إلى التصدير.',
-      'hero.cta1': 'احصل على عرض سعر مجاني',
-      'hero.cta2': '← شاهد كتالوجنا',
+      'hero.eyebrow': 'باليت خشبي — تونس',
+      'hero.title': '<span class="hl">حلول خشبية</span> موثوقة لنشاطك',
+      'hero.lead': 'تصنيع باليت خشبي وحلول تغليف ملائمة لمتطلبات الصناعة واللوجستيك والنقل.',
+      'hero.cta1': 'اطلب عرض سعر',
+      'hero.cta2': 'اكتشف منتجاتنا',
       'hero.badge1': 'توصيل في كامل تونس',
       'hero.badge2': 'خشب مراقَب وباليت قابل للتتبُّع',
       'hero.badge3': 'مقاسات حسب الطلب',
