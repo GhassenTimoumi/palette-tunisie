@@ -128,8 +128,8 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.08;letter-spacing:-.02em;
 
 /* ---------- Hero ---------- */
 .hero{position:relative;overflow:hidden;color:#F4EFE8;background:
-  linear-gradient(180deg, rgba(23,23,23,.82) 0%, rgba(23,23,23,.90) 100%),
-  linear-gradient(115deg, rgba(23,23,23,.55), rgba(58,38,24,.35)),
+  linear-gradient(180deg, rgba(20,20,20,.92) 0%, rgba(20,20,20,.965) 100%),
+  linear-gradient(115deg, rgba(23,23,23,.6), rgba(58,38,24,.45)),
   url(../assets/gallery/palettes-empilees-stock.webp);
   background-size:cover;background-position:center;background-repeat:no-repeat;
 }
@@ -611,3 +611,7 @@ input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;bac
 .about__badge{z-index:2}
 .social__btn{justify-content:center}           /* touch-target rule forced inline-flex; re-center the icon */
 .logo-ph{text-transform:uppercase;letter-spacing:.06em;font-size:.72rem;color:var(--espresso-2);border-style:solid;border-color:var(--line)}
+
+/* ---- Fixes from visual audit: footer links stacked (not run-together), tighter; chip not clipped ---- */
+.footer__col a{display:block;min-height:0;align-items:initial}
+.hero__chip--2{left:6%}
