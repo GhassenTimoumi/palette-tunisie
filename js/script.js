@@ -116,7 +116,6 @@
       if (elUnit) elUnit.textContent = money(u);
       if (elTotal) elTotal.textContent = money(u * q);
     }
-    if (elPreview && P) P.render(elPreview, Object.assign({ scale: 15 }, TYPE_OPTS[ty]));
   }
 
   if (elType) {

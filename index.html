@@ -377,7 +377,7 @@
         <span class="eyebrow"><i class="dot"></i> <span data-i18n="calc.eyebrow">Devis instantané</span></span>
         <h2 class="section__title" data-i18n="calc.title">Estimez votre commande de palettes</h2>
         <p class="section__sub" data-i18n="calc.sub">Paramétrez votre besoin en quelques secondes et transmettez-le. Notre équipe vous recontacte avec une offre ferme.</p>
-        <div class="calc__preview" id="calcPreview"></div>
+        <figure class="calc__preview" id="calcPreview"><img src="assets/gallery/palette-renforcee-bois.webp" alt="Palette en bois renforcée pour charges lourdes — Palette Tunisie" width="900" height="611" loading="lazy" /></figure>
       </div>
 
       <form class="calc__panel reveal" id="estimatorForm" novalidate>
@@ -429,7 +429,8 @@
         <p data-i18n="exp.p1">La norme internationale ISPM 15 régit les emballages en bois qui circulent dans le commerce mondial. Le bois subit un traitement thermique (HT — chauffé à cœur à 56 °C pendant au moins 30 minutes) qui neutralise les parasites, puis reçoit un marquage officiel attestant ce traitement.</p>
         <p data-i18n="exp.p2">De nombreux pays importateurs réclament ce traitement et son marquage avant toute entrée sur leur territoire. Nous vous orientons vers le format et le traitement qui conviennent à votre destination et à votre marchandise.</p>
         <!-- CONFIRM: statement below about SGP's own certification/authorisation status. Keep as placeholder until confirmed. -->
-        <p class="export__note" data-i18n="exp.note">⚠️ À confirmer : statut d'autorisation/certification ISPM 15 de Palette Tunisie (numéro d'agrément, organisme). Ne pas publier de numéro avant validation.</p>
+        <!-- CONFIRM: ne pas publier de numéro d'agrément ISPM 15 avant validation par l'organisme compétent -->
+        <p class="export__note" data-i18n="exp.note">Nous vous accompagnons sur le choix du traitement thermique (HT) et du marquage ISPM 15 adaptés à votre destination d'export.</p>
         <a href="produits/palette-export-ispm15.html" class="btn btn--ghost" data-i18n="exp.more">En savoir plus sur l'export →</a>
       </div>
       <ul class="export__list">
@@ -500,21 +501,19 @@
   <section class="section section--alt" id="temoignages">
     <div class="container">
       <header class="section__head reveal">
-        <span class="eyebrow eyebrow--center"><i class="dot"></i> <span data-i18n="test.eyebrow">Témoignages</span></span>
-        <h2 class="section__title" data-i18n="test.title">La parole à nos clients</h2>
-        <p class="section__sub" data-i18n="test.sub">Emplacements réservés — à remplacer par de véritables retours clients (avec leur accord).</p>
+        <span class="eyebrow eyebrow--center"><i class="dot"></i> <span data-i18n="test.eyebrow">Nos engagements</span></span>
+        <h2 class="section__title" data-i18n="test.title">Pourquoi les industriels nous font confiance</h2>
+        <p class="section__sub" data-i18n="test.sub">Trois priorités qui guident chaque commande, de la première prise de contact à la livraison sur votre site.</p>
       </header>
-      <!-- CONFIRM: remplacer par de vrais témoignages clients. Ne pas inventer de noms ni de citations. -->
       <div class="cards cards--3">
-        <article class="quote reveal"><p class="quote__text" data-i18n="test.ph">« Témoignage client à venir — en attente de validation. »</p><footer class="quote__by"><span class="quote__avatar" aria-hidden="true"></span><span data-i18n="test.by">Client à confirmer — Secteur / Ville</span></footer></article>
-        <article class="quote reveal"><p class="quote__text" data-i18n="test.ph">« Témoignage client à venir — en attente de validation. »</p><footer class="quote__by"><span class="quote__avatar" aria-hidden="true"></span><span data-i18n="test.by">Client à confirmer — Secteur / Ville</span></footer></article>
-        <article class="quote reveal"><p class="quote__text" data-i18n="test.ph">« Témoignage client à venir — en attente de validation. »</p><footer class="quote__by"><span class="quote__avatar" aria-hidden="true"></span><span data-i18n="test.by">Client à confirmer — Secteur / Ville</span></footer></article>
+        <article class="card reveal"><div class="card__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4 3 7 7 9 4-2 7-5 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg></div><h3 data-i18n="test.c1.t">Fiabilité</h3><p data-i18n="test.c1.d">Des palettes montées en bois contrôlé, pour des charges tenues et des flux logistiques sans rupture.</p></article>
+        <article class="card reveal"><div class="card__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21v-4L14 6l4 4L7 21H3Z"/><path d="m13 5 4 4"/></svg></div><h3 data-i18n="test.c2.t">Sur-mesure</h3><p data-i18n="test.c2.d">Dimensions, capacités de charge et traitements adaptés précisément à votre cahier des charges.</p></article>
+        <article class="card reveal"><div class="card__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3 data-i18n="test.c3.t">Réactivité</h3><p data-i18n="test.c3.d">Un devis sous 2 heures ouvrables et un interlocuteur dédié jusqu'à la livraison.</p></article>
       </div>
-      <!-- Client logos (placeholders) -->
-      <p class="logos__title" data-i18n="test.trusted">Des entreprises qui nous font confiance</p>
-      <div class="logos" aria-label="Logos clients (à confirmer)">
-        <div class="logo-ph" aria-hidden="true">Logo 1</div><div class="logo-ph" aria-hidden="true">Logo 2</div><div class="logo-ph" aria-hidden="true">Logo 3</div>
-        <div class="logo-ph" aria-hidden="true">Logo 4</div><div class="logo-ph" aria-hidden="true">Logo 5</div><div class="logo-ph" aria-hidden="true">Logo 6</div>
+      <p class="logos__title" data-i18n="test.trusted">Nous accompagnons les secteurs exigeants</p>
+      <div class="logos" aria-label="Secteurs desservis">
+        <div class="logo-ph" data-i18n="sect.1">Industrie</div><div class="logo-ph" data-i18n="sect.2">Logistique</div><div class="logo-ph" data-i18n="sect.3">Export</div>
+        <div class="logo-ph" data-i18n="sect.4">Agroalimentaire</div><div class="logo-ph" data-i18n="sect.5">BTP</div><div class="logo-ph" data-i18n="sect.6">Distribution</div>
       </div>
     </div>
   </section>
